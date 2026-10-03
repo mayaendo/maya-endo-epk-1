@@ -59,10 +59,6 @@ const NavMenu = dynamic(() => import("@/components/NavMenu"), {
   ssr: false
 })
 
-const EventPopup = dynamic(() => import("@/components/EventPopup"), {
-  ssr: false
-})
-
 const raleway = Raleway({ subsets: ["latin"] })
 
 const instrumentSerif = localFont({
@@ -114,7 +110,6 @@ export default function RootLayout({
             <ClientAudioRoot>
               <NavMenu />
               <main>{children}</main>
-              <EventPopup />
               <Analytics />
             </ClientAudioRoot>
           </div>
